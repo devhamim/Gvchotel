@@ -72,7 +72,7 @@
 					<div class="title">
 						<h3>A self-described luxury temporary residence, the <span>Mendoz Suits</span> alone.</h3>
 					</div><!-- /.title -->
-					<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined. Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined.</p>
+					<p>Welcome to Canada’s most luxurious hotel and Resturants, where elegance meets influence. Frequented by politicians, celebrities, and tastemakers, this iconic hotel and its world-renowned restaurant are the epitome of sophistication. Every moment here is curated with timeless grace, from opulent suites to culinary masterpieces crafted to perfection. It’s more than a destination—it’s where power, prestige, and luxury intertwine in perfect harmony.</p>
 					<p class="highlight">Bring to the table win-win survival strategies to ensure proactive domination at the end of the day</p>
 					<a href="{{route('about_us')}}" class="more-about">More about us</a>
 				</div><!-- /.about-content -->
