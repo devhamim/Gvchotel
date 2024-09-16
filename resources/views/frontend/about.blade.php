@@ -135,90 +135,22 @@
 			<div class="line"></div><!-- /.line -->
 		</div><!-- /.title -->
 		<div class="testimonials-carousel owl-theme owl-carousel">
+			@foreach ($customerSays as $customer)
 			<div class="item">
 				<div class="single-testimonials-style-one">
-					<img src="{{ asset('frontend') }}/img/testi-1-1.png" alt="" />
-					<h3>Ira Mulanax</h3>
-					<span class="position">Melborne / Australia</span>
+					<img src="{{asset('uploads/customersay')}}/{{$customer->image}}" alt="" />
+					<h3>{{$customer->name}}</h3>
+					<span class="position">{{$customer->post}}</span>
 					<div class="star-rating">
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
+					<p>{{ $customer->description }}</p>
 				</div><!-- /.single-testimonials-style-one -->
 			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{ asset('frontend') }}/img/testi-1-2.png" alt="" />
-					<h3>Lilli Knippers</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{ asset('frontend') }}/img/testi-1-3.png" alt="" />
-					<h3>Deedra Yeiser</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{ asset('frontend') }}/img/testi-1-1.png" alt="" />
-					<h3>Dallas Chapdelaine</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{ asset('frontend') }}/img/testi-1-2.png" alt="" />
-					<h3>Alonso Steeves</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{ asset('frontend') }}/img/testi-1-3.png" alt="" />
-					<h3>Layne Kuns</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
+            @endforeach
 		</div><!-- /.testimonials-carousel -->
 	</div><!-- /.thm-container -->
 </section><!-- /.testimonials-section -->

@@ -74,7 +74,7 @@
 					</div><!-- /.title -->
 					<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined. Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined.</p>
 					<p class="highlight">Bring to the table win-win survival strategies to ensure proactive domination at the end of the day</p>
-					<a href="#" class="more-about">More about us</a>
+					<a href="{{route('about_us')}}" class="more-about">More about us</a>
 				</div><!-- /.about-content -->
 			</div><!-- /.col-md-8 -->
 			<div class="col-md-4 col-sm-6 col-xs-12">
@@ -92,12 +92,12 @@
 				<p>Pick a room that best suits your choice and budget</p>
 			</div><!-- /.title -->
 			<div class="btn-box pull-right">
-				<a href="#" class="more-btn">View all rooms</a>
+				<a href="{{route('room.finds')}}" class="more-btn">View all rooms</a>
 			</div><!-- /.btn-box pull-right -->
 		</div><!-- /.top-box -->
 		<div class="row">
             @foreach ($rooms->take(12) as $room)
-                <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 5px">
+                <div class="col-md-4 col-sm-6 col-xs-12" style="padding: 5px">
                     <div class="single-accomodation-style-one">
                         <div class="img-box">
                             <img src="{{asset('uploads/rooms')}}/{{$room->image}}" alt="Awesome Image"/>
@@ -200,90 +200,22 @@
 			<div class="line"></div><!-- /.line -->
 		</div><!-- /.title -->
 		<div class="testimonials-carousel owl-theme owl-carousel">
+            @foreach ($customerSays as $customer)
 			<div class="item">
 				<div class="single-testimonials-style-one">
-					<img src="{{asset('frontend')}}/img/testi-1-1.png" alt="" />
-					<h3>Ira Mulanax</h3>
-					<span class="position">Melborne / Australia</span>
+					<img src="{{asset('uploads/customersay')}}/{{$customer->image}}" alt="" />
+					<h3>{{$customer->name}}</h3>
+					<span class="position">{{$customer->post}}</span>
 					<div class="star-rating">
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
+					<p>{{ $customer->description }}</p>
 				</div><!-- /.single-testimonials-style-one -->
 			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{asset('frontend')}}/img/testi-1-2.png" alt="" />
-					<h3>Lilli Knippers</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{asset('frontend')}}/img/testi-1-3.png" alt="" />
-					<h3>Deedra Yeiser</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{asset('frontend')}}/img/testi-1-1.png" alt="" />
-					<h3>Dallas Chapdelaine</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{asset('frontend')}}/img/testi-1-2.png" alt="" />
-					<h3>Alonso Steeves</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
-			<div class="item">
-				<div class="single-testimonials-style-one">
-					<img src="{{asset('frontend')}}/img/testi-1-3.png" alt="" />
-					<h3>Layne Kuns</h3>
-					<span class="position">Melborne / Australia</span>
-					<div class="star-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div><!-- /.star-rating -->
-					<p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing.</p>
-				</div><!-- /.single-testimonials-style-one -->
-			</div><!-- /.item -->
+            @endforeach
 		</div><!-- /.testimonials-carousel -->
 	</div><!-- /.thm-container -->
 </section><!-- /.testimonials-section -->
@@ -295,42 +227,20 @@
 			<p>New normal that has evolved from generation heading towards a streamlined</p>
 		</div><!-- /.title -->
 		<div class="row">
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<div class="single-blog-style-two">
-					<div class="img-box">
-						<img src="{{asset('frontend')}}/img/blog-h2-1-1.jpg" alt="Awesome Image"/>
-					</div><!-- /.img-box -->
-					<div class="text-box">
-						<div class="cat"><a href="#">News</a></div><!-- /.cat -->
-						<h3 class="black-text">Efficiently unleash cross-media information without cross-media value. Quickly maximize timely</h3>
-						<a href="#" class="more">Read More</a>
-					</div><!-- /.text-box -->
-				</div><!-- /.single-blog-style-two -->
-			</div><!-- /.col-md-4 -->
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<div class="single-blog-style-two">
-					<div class="text-box">
-						<div class="cat"><a href="#">News</a></div><!-- /.cat -->
-						<h3 class="black-text">Efficiently unleash cross-media information without cross-media value. Quickly maximize timely</h3>
-						<a href="#" class="more">Read More</a>
-					</div><!-- /.text-box -->
-					<div class="img-box">
-						<img src="{{asset('frontend')}}/img/blog-h2-1-2.jpg" alt="Awesome Image"/>
-					</div><!-- /.img-box -->
-				</div><!-- /.single-blog-style-two -->
-			</div><!-- /.col-md-4 -->
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<div class="single-blog-style-two">
-					<div class="img-box">
-						<img src="{{asset('frontend')}}/img/blog-h2-1-3.jpg" alt="Awesome Image"/>
-					</div><!-- /.img-box -->
-					<div class="text-box">
-						<div class="cat"><a href="#">News</a></div><!-- /.cat -->
-						<h3 class="black-text">Efficiently unleash cross-media information without cross-media value. Quickly maximize timely</h3>
-						<a href="#" class="more">Read More</a>
-					</div><!-- /.text-box -->
-				</div><!-- /.single-blog-style-two -->
-			</div><!-- /.col-md-4 -->
+            @foreach ($blogs->take(3) as $blog)
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-blog-style-two">
+                        <div class="img-box">
+                            <img src="{{asset('uploads/blog')}}/{{$blog->image}}" alt="Awesome Image"/>
+                        </div><!-- /.img-box -->
+                        <div class="text-box">
+                            <div class="cat"><a href="{{route('our.blog.details',$blog->slug)}}">Blog</a></div><!-- /.cat -->
+                            <h3 class="black-text">{{$blog->title}}</h3>
+                            <a href="{{route('our.blog.details',$blog->slug)}}" class="more">Read More</a>
+                        </div><!-- /.text-box -->
+                    </div><!-- /.single-blog-style-two -->
+                </div><!-- /.col-md-4 -->
+            @endforeach
 		</div><!-- /.row -->
 	</div><!-- /.thm-container -->
 </section><!-- /.blog-style-one -->
@@ -367,65 +277,16 @@
 <section class="instafeed-gallery sec-pad">
 	<div class="thm-container">
 		<div class="title">
-			<h3>Instagram Feed</h3>
+			<h3>Gallery Feed</h3>
 			<div class="line"></div><!-- /.line -->
 		</div><!-- /.title -->
 		<div class="instafeed-slider-wrapper">
 			<div class="instafeed-slider bx-slider">
+                @foreach ($gallerys as $gallery)
 				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-1.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-1.jpg" alt="Awesome Image"/></a>
+					<a href="{{ asset('uploads/gallery') }}/{{ $gallery->image }}" class="img-popup"><img src="{{ asset('uploads/gallery') }}/{{ $gallery->image }}" alt="Awesome Image"/></a>
 				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-2.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-2.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-3.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-3.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-4.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-4.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-5.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-5.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-6.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-6.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-1.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-1.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-2.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-2.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-3.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-3.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-4.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-4.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-5.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-5.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-6.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-6.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-1.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-1.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-2.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-2.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-3.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-3.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-4.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-4.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-5.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-5.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-				<div class="slide single-instafeed-slide">
-					<a href="{{asset('frontend')}}/img/insta-feed-1-6.jpg" class="img-popup"><img src="{{asset('frontend')}}/img/insta-feed-1-6.jpg" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
+                @endforeach
 			</div><!-- /.instafeed-slider -->
 			<div class="text-box"><span>Gallery</span></div><!-- /.text-box -->
 		</div><!-- /.instafeed-slider-wrapper -->

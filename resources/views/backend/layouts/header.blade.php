@@ -3,12 +3,12 @@
         <div class="col-xxl-6 col-xl-5 col-4 d-flex align-items-center gap-20">
             <div class="main-logo d-lg-block d-none">
                 <div class="logo-big">
-                    <a href="{{ route('index') }}">
+                    <a href="{{ url('/') }}" target="_blank">
                         <img src="{{ asset('uploads/setting') }}/{{ $setting->first()->logo }}" alt="Logo">
                     </a>
                 </div>
                 <div class="logo-small">
-                    <a href="{{ route('index') }}">
+                    <a href="{{ url('/') }}" target="_blank">
                         <img src="{{ asset('uploads/setting') }}/{{ $setting->first()->logo }}" alt="Logo">
                     </a>
                 </div>
@@ -20,7 +20,7 @@
         </div>
         <div class="col-4 d-lg-none">
             <div class="mobile-logo">
-                <a href="{{ route('index') }}">
+                <a href="{{ url('/') }}" target="_blank">
                     <img src="{{ asset('uploads/setting') }}/{{ $setting->first()->logo }}" alt="Logo">
                 </a>
             </div>

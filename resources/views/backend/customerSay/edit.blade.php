@@ -20,13 +20,13 @@
                         <div class="col-12">
                             <label class="form-label">Name</label>
                             <input type="text" name="name" class="form-control form-control-sm" value="{{ $customerSays->name }}">
-                            
+
                         </div>
                         <div class="col-12">
                             <label class="form-label">Position</label>
                             <input type="text" name="post" class="form-control form-control-sm" value="{{ $customerSays->post }}">
                         </div>
-                        
+
                         <div class="col-12">
                             <div class="upload-category-thumbnail">
                                 <label class="form-label" id="addCatThumb">Image</label>
@@ -37,8 +37,8 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <label class="form-label">Position</label>
-                            <textarea name="description" rows="7" id="summernote" class="form-control form-control-sm">{!! $customerSays->description !!}</textarea>
+                            <label class="form-label">Description</label>
+                            <textarea name="description" rows="7"  class="form-control form-control-sm">{!! $customerSays->description !!}</textarea>
                         </div>
                         <div class="col-12">
                             <label class="form-label">Status</label>
@@ -57,6 +57,6 @@
             </div>
         </div>
     </div>
-    
+
 </div>
 @endsection

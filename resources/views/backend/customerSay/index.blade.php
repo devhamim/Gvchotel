@@ -28,7 +28,7 @@
                         </div>
                         <div class="col-12">
                             <label class="form-label">Description</label>
-                            <textarea rows="7" id="summernote" name="description" class="form-control form-control-sm @error('description') is-invalid @enderror">{{ old('description') }}</textarea>
+                            <textarea rows="7" name="description" class="form-control form-control-sm @error('description') is-invalid @enderror">{{ old('description') }}</textarea>
                             @error('description')
                                 <strong class="text-danger">{{ $message }}</strong>
                             @enderror
@@ -50,7 +50,7 @@
                 <div class="btn-box d-flex gap-2">
                     <div id="tableSearch"></div>
                     <div class="digi-dropdown dropdown">
-                        
+
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 <div class="table-filter-option">
                     <div class="row justify-content-between g-3">
                         <div class="col-xxl-4 col-6 col-xs-12">
-                            
+
                         </div>
                         <div class="col-xl-2 col-3 col-xs-12 d-flex justify-content-end">
                             <div id="productTableLength"></div>
