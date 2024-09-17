@@ -74,6 +74,7 @@ Route::post('/booking/payment/store', [FrontendController::class, 'booking_payme
 Route::get('/booking/success', [FrontendController::class, 'booking_success'])->name('booking.success');
 Route::post('/gest/room/book', [FrontendController::class, 'gest_room_book'])->name('gest.room.book');
 Route::post('/search/rooms', [FrontendController::class, 'searchrooms'])->name('search.rooms');
+Route::get('/restaurant', [FrontendController::class, 'restaurant'])->name('restaurant');
 
 Route::post('/blog/comment', [BlogController::class, 'blog_comment'])->name('blog.comment');
 Route::get('/dealerform/visiting/{id}', [DealerFormController::class, 'dealerform_visiting'])->name('dealerform.visiting');

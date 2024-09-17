@@ -1,7 +1,7 @@
 @extends('frontend.layout.app')
 @section('content')
 
-<section class="inner-banner">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-14.jpg') }}');">
     <div class="thm-container">
         <h2>Contact us</h2>
         <div class="breadcumb">
@@ -61,17 +61,17 @@
                             @endif
                         </div><!-- /.single-contact-info -->
                     </div><!-- /.contact-info -->
-                    <div class="sub-title">
-                        <h3>Reception Phone No.</h3>
-                    </div><!-- /.sub-title -->
-                    <div class="contact-info">
-                        <div class="single-contact-info">
-                            <i class="fa fa-phone"></i>
-                            @if ($settings->first()->number != null)
-                                <p>{{ $settings->first()->number }}</p>
-                            @endif
-                        </div><!-- /.single-contact-info -->
-                    </div><!-- /.contact-info -->
+                    @if ($settings->first()->number != null)
+                        <div class="sub-title">
+                            <h3>Reception Phone No.</h3>
+                        </div><!-- /.sub-title -->
+                        <div class="contact-info">
+                            <div class="single-contact-info">
+                                <i class="fa fa-phone"></i>
+                                    <p>{{ $settings->first()->number }}</p>
+                            </div><!-- /.single-contact-info -->
+                        </div><!-- /.contact-info -->
+                    @endif
                 </div><!-- /.contact-page-sidebar -->
             </div><!-- /.col-md-4 -->
         </div><!-- /.row -->

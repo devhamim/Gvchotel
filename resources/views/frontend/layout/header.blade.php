@@ -38,9 +38,9 @@
                     <li><a href="{{url('/')}}">Home</a></li>
 						<li><a href="{{route('room.finds')}}">Room</a></li>
 						<li><a href="{{route('services')}}">Service</a></li>
+						<li><a href="{{route('restaurant')}}">Restaurant</a></li>
 						<li><a href="{{route('gallerys')}}">Gallery</a></li>
                         <li><a href="{{route('about_us')}}">About</a></li>
-						{{-- <li><a href="{{route('career')}}">Career</a></li> --}}
                         <li><a href="{{route('our.blog')}}">Blog</a></li>
 						<li><a href="{{route('contect')}}">Contact</a></li>
                 </ul>

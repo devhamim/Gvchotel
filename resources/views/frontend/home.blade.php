@@ -70,10 +70,10 @@
 			<div class="col-md-8">
 				<div class="about-content">
 					<div class="title">
-						<h3>A self-described luxury temporary residence, the <span>Mendoz Suits</span> alone.</h3>
+						<h3>Discover Canada’s Most <span>Exquisite Luxury Hotel And Resturant </span> alone.</h3>
 					</div><!-- /.title -->
 					<p>Welcome to Canada’s most luxurious hotel and Resturants, where elegance meets influence. Frequented by politicians, celebrities, and tastemakers, this iconic hotel and its world-renowned restaurant are the epitome of sophistication. Every moment here is curated with timeless grace, from opulent suites to culinary masterpieces crafted to perfection. It’s more than a destination—it’s where power, prestige, and luxury intertwine in perfect harmony.</p>
-					<p class="highlight">Bring to the table win-win survival strategies to ensure proactive domination at the end of the day</p>
+					<p class="highlight">Discover Canada’s Pinnacle of Luxury: Where Elegance, Prestige, and Sophistication Converge</p>
 					<a href="{{route('about_us')}}" class="more-about">More about us</a>
 				</div><!-- /.about-content -->
 			</div><!-- /.col-md-8 -->
@@ -88,8 +88,8 @@
 	<div class="thm-container">
 		<div class="top-box clearfix">
 			<div class="title pull-left">
-				<h3>Our Accomodation</h3>
-				<p>Pick a room that best suits your choice and budget</p>
+				<h3>Our Residence</h3>
+				<p>Welcome to Your Dream Residence: A Place Where Every Wish and Desire Comes True!</p>
 			</div><!-- /.title -->
 			<div class="btn-box pull-right">
 				<a href="{{route('room.finds')}}" class="more-btn">View all rooms</a>
@@ -130,7 +130,7 @@
 	<div class="thm-container">
 		<div class="title">
 			<h3>Our Services</h3>
-			<p>New normal that has evolved from generation heading towards a streamlined.</p>
+			<p>Canadian hotel and restaurant with luxurious rooms, fine dining, and top-notch service in stunning locations.</p>
 			<div class="line"></div><!-- /.line -->
 		</div><!-- /.title -->
 		<div class="row">
@@ -141,7 +141,7 @@
 					</div><!-- /.icon-box -->
 					<div class="text-box">
 						<h3>Luxuary Spa</h3>
-						<p>New normal that has evolved from generation heading of towards a streaml.</p>
+						<p>Luxury resort with serene in-house spa offering relaxing treatments, massages, wellness therapies.</p>
 					</div><!-- /.text-box -->
 				</div><!-- /.single-service-style-one -->
 			</div><!-- /.col-md-3 -->
@@ -152,7 +152,7 @@
 					</div><!-- /.icon-box -->
 					<div class="text-box">
 						<h3>Arrival Breakfast</h3>
-						<p>New normal that has evolved from generation heading of towards a streaml.</p>
+						<p>Experience a gourmet arrival breakfast at our luxury resort, designed to start your stay perfectly.</p>
 					</div><!-- /.text-box -->
 				</div><!-- /.single-service-style-one -->
 			</div><!-- /.col-md-3 -->
@@ -163,7 +163,7 @@
 					</div><!-- /.icon-box -->
 					<div class="text-box">
 						<h3>Tour Guide</h3>
-						<p>New normal that has evolved from generation heading of towards a streaml.</p>
+						<p>Canadian luxury resort offers complimentary guided tours for enriching local experiences and insights.</p>
 					</div><!-- /.text-box -->
 				</div><!-- /.single-service-style-one -->
 			</div><!-- /.col-md-3 -->
@@ -174,7 +174,7 @@
 					</div><!-- /.icon-box -->
 					<div class="text-box">
 						<h3>Inhouse Restaurant</h3>
-						<p>New normal that has evolved from generation heading of towards a streaml.</p>
+						<p>Luxury hotel and resort with in-house restaurant serving gourmet meals and exquisite dishes.</p>
 					</div><!-- /.text-box -->
 				</div><!-- /.single-service-style-one -->
 			</div><!-- /.col-md-3 -->
@@ -288,7 +288,7 @@
 				</div><!-- /.slide -->
                 @endforeach
 			</div><!-- /.instafeed-slider -->
-			<div class="text-box"><span>Gallery</span></div><!-- /.text-box -->
+			<div class="text-box"><span><a href="{{ route('gallerys') }}">Gallery</a></span></div><!-- /.text-box -->
 		</div><!-- /.instafeed-slider-wrapper -->
 	</div><!-- /.thm-container -->
 </section><!-- /.instafeed-gallery -->

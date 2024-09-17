@@ -403,4 +403,9 @@ class FrontendController extends Controller
 
     }
 
+    // restaurant
+    function restaurant(){
+        return view('frontend.restaurant');
+    }
+
 }

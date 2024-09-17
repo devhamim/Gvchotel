@@ -1,7 +1,7 @@
 @extends('frontend.layout.app')
 @section('content')
 
-<section class="inner-banner">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-3.jpg') }}');">
     <div class="thm-container">
         <h2>About Us</h2>
         <div class="breadcumb">
@@ -18,12 +18,12 @@
             <div class="col-md-7">
                 <div class="about-style-one-content">
                     <div class="title">
-                        <h3>Our Approach towards our clients</h3>
+                        <h3>Discover Canada’s Most Exquisite Luxury Hotel And Resturant</h3>
                         <div class="line"></div><!-- /.line -->
                     </div><!-- /.title -->
                     <p class="highlighted">Hi. Our inn has been available for more than 5 years. We make the best for every one of our clients.</p><!-- /.highlighted -->
                     <p>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line digital divide with additional clickthroughs from DevOps immersion along additional clickthroughs from DevOps.</p>
-                    <p>Nanotechnology immersion along the information highway will close the loop on oop on focusing solely on the bottom line digital divide with additional focusing solely on the bottom line digita.</p>
+                    <p>Discover Canada’s Pinnacle of Luxury: Where Elegance, Prestige, and Sophistication Converge.</p>
                 </div><!-- /.about-style-one-content -->
             </div><!-- /.col-md-7 -->
             <div class="col-md-5 text-right">

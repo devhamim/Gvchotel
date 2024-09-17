@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="inner-banner">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important; background: url('{{ asset('frontend/img/Sub-Banner-6.jpg') }}')">
     <div class="thm-container pt-5">
         <h2>Rooms Grid</h2>
         <div class="breadcumb">

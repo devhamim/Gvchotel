@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="inner-banner">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-10.jpg') }}');">
     <div class="thm-container">
         <h2>Services</h2>
         <div class="breadcumb">
@@ -75,7 +75,6 @@
 					<i class="mendoz-suit-icon-taxi"></i>
 					<a href="#"><h3>Car Rental</h3></a>
 					<p>Nanotechnology immersion along the information highway will close the loop on focusing solely.</p>
-					<a href="#" class="read-more">Read More</a>
 				</div><!-- /.single-service-style-five -->
 			</div><!-- /.col-md-3 -->
 			<div class="col-md-3 col-sm-6 col-xs-12">
@@ -83,7 +82,6 @@
 					<i class="mendoz-suit-icon-swimming-pool"></i>
 					<a href="#"><h3>Swimming Pool</h3></a>
 					<p>Nanotechnology immersion along the information highway will close the loop on focusing solely.</p>
-					<a href="#" class="read-more">Read More</a>
 				</div><!-- /.single-service-style-five -->
 			</div><!-- /.col-md-3 -->
 			<div class="col-md-3 col-sm-6 col-xs-12">
@@ -91,7 +89,6 @@
 					<i class="mendoz-suit-icon-wifi"></i>
 					<a href="#"><h3>Free WiFi</h3></a>
 					<p>Nanotechnology immersion along the information highway will close the loop on focusing solely.</p>
-					<a href="#" class="read-more">Read More</a>
 				</div><!-- /.single-service-style-five -->
 			</div><!-- /.col-md-3 -->
 			<div class="col-md-3 col-sm-6 col-xs-12">
@@ -99,7 +96,6 @@
 					<i class="mendoz-suit-icon-bed"></i>
 					<a href="#"><h3>King Beds</h3></a>
 					<p>Nanotechnology immersion along the information highway will close the loop on focusing solely.</p>
-					<a href="#" class="read-more">Read More</a>
 				</div><!-- /.single-service-style-five -->
 			</div><!-- /.col-md-3 -->
 			<div class="col-md-3 col-sm-6 col-xs-12">
@@ -107,7 +103,6 @@
 					<i class="mendoz-suit-icon-fashion"></i>
 					<a href="#"><h3>Laundry Service</h3></a>
 					<p>Nanotechnology immersion along the information highway will close the loop on focusing solely.</p>
-					<a href="#" class="read-more">Read More</a>
 				</div><!-- /.single-service-style-five -->
 			</div><!-- /.col-md-3 -->
 			<div class="col-md-3 col-sm-6 col-xs-12">
@@ -115,7 +110,6 @@
 					<i class="mendoz-suit-icon-breakfast"></i>
 					<a href="#"><h3>Welcome Drink</h3></a>
 					<p>Nanotechnology immersion along the information highway will close the loop on focusing solely.</p>
-					<a href="#" class="read-more">Read More</a>
 				</div><!-- /.single-service-style-five -->
 			</div><!-- /.col-md-3 -->
 			<div class="col-md-3 col-sm-6 col-xs-12">
@@ -123,7 +117,6 @@
 					<i class="mendoz-suit-icon-smoke"></i>
 					<a href="#"><h3>Smoking Free</h3></a>
 					<p>Nanotechnology immersion along the information highway will close the loop on focusing solely.</p>
-					<a href="#" class="read-more">Read More</a>
 				</div><!-- /.single-service-style-five -->
 			</div><!-- /.col-md-3 -->
 			<div class="col-md-3 col-sm-6 col-xs-12">
@@ -131,7 +124,6 @@
 					<i class="mendoz-suit-icon-architecture-and-city"></i>
 					<a href="#"><h3>Tour Guide</h3></a>
 					<p>Nanotechnology immersion along the information highway will close the loop on focusing solely.</p>
-					<a href="#" class="read-more">Read More</a>
 				</div><!-- /.single-service-style-five -->
 			</div><!-- /.col-md-3 -->
 		</div><!-- /.row -->
