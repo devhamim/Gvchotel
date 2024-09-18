@@ -223,7 +223,7 @@
 <section class="blog-style-one home-page-two">
 	<div class="thm-container">
 		<div class="title text-left style-two">
-			<h3>Latest News & Events</h3>
+			<h3>Latest Blogs & Events</h3>
 			<p>New normal that has evolved from generation heading towards a streamlined</p>
 		</div><!-- /.title -->
 		<div class="row">
@@ -235,7 +235,7 @@
                         </div><!-- /.img-box -->
                         <div class="text-box">
                             <div class="cat"><a href="{{route('our.blog.details',$blog->slug)}}">Blog</a></div><!-- /.cat -->
-                            <h3 class="black-text">{{$blog->title}}</h3>
+                            <h3 class="black-text"><a href="{{route('our.blog.details',$blog->slug)}}">{{$blog->title}}</a></h3>
                             <a href="{{route('our.blog.details',$blog->slug)}}" class="more">Read More</a>
                         </div><!-- /.text-box -->
                     </div><!-- /.single-blog-style-two -->

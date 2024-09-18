@@ -2939,7 +2939,7 @@ header.home-page-five .header-navigation.stricky-fixed ul.navigation-box > li:ho
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
   text-align: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .single-blog-style-four .content-box .text-box a.read-more:hover {
   color: #fff;
