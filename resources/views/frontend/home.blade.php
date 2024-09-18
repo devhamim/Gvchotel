@@ -9,12 +9,12 @@
 					<span class="tag-line">{{ $banners->first()->description }}</span>
 					<div class="title-text">Comfort
 						<div class="type-wrap">
-                            <div class="typed-strings">
+                            {{-- <div class="typed-strings">
                                 <p>Luxuary Resort</p>
                                 <p>Delux Rooms</p>
                                 <p>King Beds</p>
-                            </div>
-                            <div class="typed"></div>
+                            </div> --}}
+                            {{-- <div class="typed"></div> --}}
                         </div>
 						<br />{{ $banners->first()->title }} </div>
 					<a href="{{route('room.finds')}}" class="banner-btn">Book today now</a>
@@ -187,7 +187,7 @@
 		<div class="thm-container">
 			<div class="title text-left">
 				<h3>Relax & Enjoy with us <br /><span>your holidays</span></h3>
-				<a href="http://www.youtube.com/watch?v=ehpLLmnhzxs" class="video-btn video-popup hvr-pulse"><i class="mendoz-suit-icon-play-button"></i></a>
+				{{-- <a href="http://www.youtube.com/watch?v=ehpLLmnhzxs" class="video-btn video-popup hvr-pulse"><i class="mendoz-suit-icon-play-button"></i></a> --}}
 			</div><!-- /.title -->
 		</div><!-- /.thm-container -->
 	</div><!-- /.inner -->

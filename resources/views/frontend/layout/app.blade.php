@@ -38,6 +38,7 @@
     </div>
 </div>
 
+@include('sweetalert::alert')
 
 <script src="{{ asset('frontend') }}/js/jquery.js"></script>
 

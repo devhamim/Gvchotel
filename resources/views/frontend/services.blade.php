@@ -134,7 +134,7 @@
 	<div class="thm-container">
 		<div class="title text-center">
 			<h3>Relax & Enjoy with us <br /><span>your holidays</span></h3>
-			<a href="http://www.youtube.com/watch?v=ehpLLmnhzxs" class="video-btn video-popup hvr-pulse"><i class="mendoz-suit-icon-play-button"></i></a>
+			{{-- <a href="http://www.youtube.com/watch?v=ehpLLmnhzxs" class="video-btn video-popup hvr-pulse"><i class="mendoz-suit-icon-play-button"></i></a> --}}
 		</div><!-- /.title -->
 	</div><!-- /.thm-container -->
 </section><!-- /.video-box-area -->

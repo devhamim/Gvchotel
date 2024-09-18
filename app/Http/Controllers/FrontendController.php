@@ -421,7 +421,7 @@ class FrontendController extends Controller
         $validatesData = $request->validate($rules);
 
         blogComment::create($validatesData);
-        toast('Message Sent Successfully','success');
+        alert()->success('Success','Comment Submit Successfully');
         return back();
     }
     // restaurant_table_book
@@ -439,7 +439,7 @@ class FrontendController extends Controller
         $validatesData = $request->validate($rules);
 
         restaurantTableBook::create($validatesData);
-        toast('Message Sent Successfully','success');
+        alert()->success('Success','Table Book Successfully');
         return back();
     }
 
