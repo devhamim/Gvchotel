@@ -135,18 +135,4 @@ class BlogController extends Controller
     }
 
 
-    // blog_comment
-    function blog_comment(Request $request){
-        $rules = [
-            'blogs_id'      => 'required',
-            'name'      => 'required',
-            'email'     => '',
-            'message'   => 'required',
-        ];
-        $validatesData = $request->validate($rules);
-
-        blogComment::create($validatesData);
-        toast('Message Sent Successfully','success');
-        return back();
-    }
 }

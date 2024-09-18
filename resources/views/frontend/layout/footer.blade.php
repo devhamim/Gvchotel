@@ -55,11 +55,10 @@
 						<div class="line"></div><!-- /.line -->
 					</div><!-- /.title -->
 					<ul class="links-list">
-						<li><a href="#">Our Introduction</a></li>
-						<li><a href="#">News & Tips</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">Awards</a></li>
-						<li><a href="#">Contact us</a></li>
+						<li><a href="{{route('room.finds')}}">Room</a></li>
+						<li><a href="{{route('services')}}">Service</a></li>
+						<li><a href="{{route('restaurant')}}">Restaurant</a></li>
+						<li><a href="{{route('gallerys')}}">Gallery</a></li>
 					</ul><!-- /.links-list -->
 				</div><!-- /.footer-widget -->
 			</div><!-- /.col-md-2 -->

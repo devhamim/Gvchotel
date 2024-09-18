@@ -4,7 +4,7 @@
 
 <!--==================================================-->
 <!-- Start Royella Breadcumb Area -->
-<section class="inner-banner">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-4.jpg') }}');">
     <div class="thm-container">
         <h2>Careers</h2>
         <div class="breadcumb">
@@ -23,7 +23,7 @@
 <!-- start career list Area -->
 <!--==================================================-->
 <div class="about-area inner">
-	<div class="careerlist">
+	<div class="careerlist" style="padding: 70px 0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

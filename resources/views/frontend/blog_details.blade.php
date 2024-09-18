@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="inner-banner">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-11.jpg') }}');">
     <div class="thm-container">
         <h2>Blog Details</h2>
         <div class="breadcumb">
@@ -54,7 +54,7 @@
                         @foreach ($blog_comment as $comment)
                             <div class="single-comment">
                                 <div class="img-box">
-                                    <img src="img/comment-1.jpg" alt="Awesome Image"/>
+                                    <img src="{{ asset('frontend') }}/img/comment-1.jpg" alt="Awesome Image"/>
                                 </div><!-- /.img-box -->
                                 <div class="text-box">
                                     <h4>{{ $comment->name }}</h4>
@@ -73,6 +73,7 @@
                         <form action="{{ route('blog.comment') }}" method="POST">
                             @csrf
                             <div class="row">
+                                <input type="hidden" name="blogs_id" value="{{ $blogs->first()->id }}">
                                 <div class="col-md-6">
                                     <input type="text" placeholder="Your name" name="name" required />
                                 </div><!-- /.col-md-6 -->

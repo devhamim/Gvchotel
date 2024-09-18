@@ -31,18 +31,17 @@
                     @endif
                 </a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse main-navigation" id="main-nav-bar">
                 <ul class="nav navbar-nav navigation-box">
                     <li><a href="{{url('/')}}">Home</a></li>
-						<li><a href="{{route('room.finds')}}">Room</a></li>
-						<li><a href="{{route('services')}}">Service</a></li>
-						<li><a href="{{route('restaurant')}}">Restaurant</a></li>
-						<li><a href="{{route('gallerys')}}">Gallery</a></li>
-                        <li><a href="{{route('about_us')}}">About</a></li>
-                        <li><a href="{{route('our.blog')}}">Blog</a></li>
-						<li><a href="{{route('contect')}}">Contact</a></li>
+                    <li><a href="{{route('room.finds')}}">Room</a></li>
+                    <li><a href="{{route('services')}}">Service</a></li>
+                    <li><a href="{{route('restaurant')}}">Restaurant</a></li>
+                    <li><a href="{{route('gallerys')}}">Gallery</a></li>
+                    <li><a href="{{route('about_us')}}">About</a></li>
+                    <li><a href="{{route('our.blog')}}">Blog</a></li>
+                    <li><a href="{{route('contect')}}">Contact</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->

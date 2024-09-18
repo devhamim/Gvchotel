@@ -124,7 +124,7 @@
             @endforeach
 		</div><!-- /.row -->
 	</div><!-- /.thm-container -->
-</section><!-- /.accomodation-style-one -->
+</section>
 
 <section class="service-style-one sec-pad">
 	<div class="thm-container">
@@ -249,16 +249,11 @@
 	<div class="thm-container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12 col-xs-12">
-				<div class="title">
-					<h3>Our Location</h3>
-				</div><!-- /.title -->
-				<div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.863091545279!2d-75.79852102230426!3d45.36341546443504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce01237874e761%3A0xc3cbb1c760bfce5f!2sThe%20Beachconers%20Microcreamery!5e0!3m2!1sen!2sbd!4v1725960618784!5m2!1sen!2sbd" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				 </div>
+				<img src="{{ asset('frontend/img/from-image.jpg') }}" alt="">
 			</div><!-- /.col-md-6 -->
 			<div class="col-md-5 col-sm-12 col-xs-12 pull-right">
 				<div class="title">
-					<h3>Drop a Message</h3>
+					<h3>Get In Touch</h3>
 				</div><!-- /.title -->
 				<form action="{{ route('customerMessage.store') }}" method="POST" class="contact-home-two">
                     @csrf
@@ -272,29 +267,54 @@
 			</div><!-- /.col-md-5 -->
 		</div><!-- /.row -->
 	</div><!-- /.thm-container -->
-</section><!-- /.sec-pad contact-home-page-two -->
+</section>
 
-<section class="instafeed-gallery sec-pad">
+<section class="accomodation-style-one sec-pad">
 	<div class="thm-container">
-		<div class="title">
-			<h3>Gallery Feed</h3>
-			<div class="line"></div><!-- /.line -->
-		</div><!-- /.title -->
-		<div class="instafeed-slider-wrapper">
-			<div class="instafeed-slider bx-slider">
-                @foreach ($gallerys as $gallery)
-				<div class="slide single-instafeed-slide">
-					<a href="{{ asset('uploads/gallery') }}/{{ $gallery->image }}" class="img-popup"><img src="{{ asset('uploads/gallery') }}/{{ $gallery->image }}" alt="Awesome Image"/></a>
-				</div><!-- /.slide -->
-                @endforeach
-			</div><!-- /.instafeed-slider -->
-			<div class="text-box"><span><a href="{{ route('gallerys') }}">Gallery</a></span></div><!-- /.text-box -->
-		</div><!-- /.instafeed-slider-wrapper -->
+		<div class="top-box clearfix">
+			<div class="title pull-left">
+				<h3>Experience the Beauty and Charm</h3>
+				<p>Our Gallery: Experience the Beauty and Charm of Our Resort and Restaurant.</p>
+			</div><!-- /.title -->
+			<div class="btn-box pull-right">
+				<a href="{{route('gallerys')}}" class="more-btn">View all</a>
+			</div><!-- /.btn-box pull-right -->
+		</div><!-- /.top-box -->
+        <section class="sec-pad gallery-page-one gallery-style-two" style="padding: 0">
+            <div class="thm-container">
+                <div class="row masonary-layout filter-layout" data-filter-class="filter">
+                    @foreach ($gallerys->take(9) as $gallery)
+                        <div class="col-md-4 col-sm-6 col-xs-12 masonary-item single-filter-item spa rooms">
+                            <div class="single-gallery-style-two">
+                                <div class="img-box">
+                                    <img src="{{ asset('uploads/gallery') }}/{{ $gallery->image }}" alt="Awesome Image"/>
+                                    <div class="overlay">
+                                        <div class="box">
+                                            <div class="content">
+                                                <a href="#"><h3>{{ $gallery->title }}</h3></a>
+                                                <a href="{{ asset('uploads/gallery') }}/{{ $gallery->image }}" class="icon icon-FullScreen img-popup"></a>
+                                            </div><!-- /.content -->
+                                        </div><!-- /.box -->
+                                    </div><!-- /.overlay -->
+                                </div><!-- /.img-box -->
+                            </div><!-- /.single-gallery-style-two -->
+                        </div><!-- /.single-filter-item -->
+                    @endforeach
+                </div>
+                <div class="my">
+
+                </div>
+            </div><!-- /.thm-container -->
+        </section>
 	</div><!-- /.thm-container -->
-</section><!-- /.instafeed-gallery -->
+</section>
 
 @endsection
-
+@if(session('success'))
+    <script>
+        alert("{{ session('success') }}");
+    </script>
+@endif
 <script>
     $(document).ready(function () {
         $('#search_input').submit(function (e) {

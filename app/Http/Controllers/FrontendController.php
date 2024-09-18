@@ -21,6 +21,7 @@ use App\Models\gestroombook;
 use App\Models\media;
 use App\Models\privacyPolicy;
 use App\Models\product;
+use App\Models\restaurantTableBook;
 use App\Models\rome;
 use App\Models\video;
 use Illuminate\Http\Request;
@@ -367,7 +368,8 @@ class FrontendController extends Controller
 
     gestcheckout::where('id', $gestcheckout)->update($validatedData);
 
-    return redirect()->route('booking.success');
+    return back()->with('error', 'Payment Transaction Fail');
+    // return redirect()->route('booking.success');
 
     }
     function booking_success(){
@@ -406,6 +408,39 @@ class FrontendController extends Controller
     // restaurant
     function restaurant(){
         return view('frontend.restaurant');
+    }
+
+    // blog_comment
+    function blog_comment(Request $request){
+        $rules = [
+            'blogs_id'      => 'required',
+            'name'      => 'required',
+            'email'     => '',
+            'message'   => 'required',
+        ];
+        $validatesData = $request->validate($rules);
+
+        blogComment::create($validatesData);
+        toast('Message Sent Successfully','success');
+        return back();
+    }
+    // restaurant_table_book
+    function restaurant_table_book(Request $request){
+
+        $rules = [
+            'number'      => 'required',
+            'name'      => 'required',
+            'email'     => 'required',
+            'message'   => 'required',
+            'date'   => 'required',
+            'time'   => 'required',
+            'schedule'   => 'required',
+        ];
+        $validatesData = $request->validate($rules);
+
+        restaurantTableBook::create($validatesData);
+        toast('Message Sent Successfully','success');
+        return back();
     }
 
 }

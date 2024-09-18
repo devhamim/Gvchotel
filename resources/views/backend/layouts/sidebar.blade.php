@@ -44,6 +44,9 @@
                         <a href="{{ route('blog.index') }}" class="sidebar-link"><span class="nav-icon"><i class="fa-solid fa-blog"></i></span> <span class="sidebar-txt">Blog</span></a>
                     </li>
                     <li class="sidebar-dropdown-item">
+                        <a href="{{ route('restaurant.book.list') }}" class="sidebar-link"><span class="nav-icon"><i class="fa-regular fa-comment"></i></span> <span class="sidebar-txt">Restaurant book list</span></a>
+                    </li>
+                    <li class="sidebar-dropdown-item">
                         <a href="{{ route('customerMessage.index') }}" class="sidebar-link"><span class="nav-icon"><i class="fa-regular fa-comment"></i></span> <span class="sidebar-txt">Customer Message</span></a>
                     </li>
                     <li class="sidebar-dropdown-item">

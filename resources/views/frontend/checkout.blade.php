@@ -3,7 +3,7 @@
 @section('content')
 <!--==================================================-->
 <!-- Start Royella Breadcumb Area -->
-<section class="inner-banner">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-6.jpg') }}');">
     <div class="thm-container">
         <h2>Checkout</h2>
         <div class="breadcumb">

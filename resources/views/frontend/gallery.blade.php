@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-1.jpg') }}');">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-15.jpg') }}');">
     <div class="thm-container">
         <h2>Gallery</h2>
         <div class="breadcumb">
@@ -36,7 +36,7 @@
                             <div class="overlay">
                                 <div class="box">
                                     <div class="content">
-                                        {{-- <a href="#"><h3>Activities</h3></a> --}}
+                                        <a href="#"><h3>{{ $gallery->title }}</h3></a>
                                         <a href="{{ asset('uploads/gallery') }}/{{ $gallery->image }}" class="icon icon-FullScreen img-popup"></a>
                                     </div><!-- /.content -->
                                 </div><!-- /.box -->
@@ -50,7 +50,7 @@
             {!! $gallerys->links() !!}
         </div>
     </div><!-- /.thm-container -->
-</section><!-- /.sec-pad -->
+</section>
 
 @endsection
 

@@ -3,7 +3,7 @@
 @section('content')
 <!--==================================================-->
 <!-- Start Royella Breadcumb Area -->
-<section class="inner-banner">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-4.jpg') }}');">
     <div class="thm-container">
         <h2>Checkout</h2>
         <div class="breadcumb">
@@ -19,7 +19,7 @@
 
 <!-- ======================= Product Detail ======================== -->
 <section class="middle">
-    <div class="container">
+    <div class="container" style="padding: 100px 0">
 
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pb-5">
@@ -146,8 +146,13 @@
             </div>
 
         </div>
-
     </div>
 </section>
 <!-- ======================= Product Detail End ======================== -->
 @endsection
+
+@if(session('error'))
+    <script>
+        alert("{{ session('error') }}");
+    </script>
+@endif

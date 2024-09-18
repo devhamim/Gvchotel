@@ -8,15 +8,15 @@ use Illuminate\Http\Request;
 class CustomerMessageController extends Controller
 {
 
-       /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    //    /**
+    //  * Create a new controller instance.
+    //  *
+    //  * @return void
+    //  */
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
     /**
      * Display a listing of the resource.
      */
@@ -53,7 +53,7 @@ class CustomerMessageController extends Controller
 
         customerMessage::create($validatesData);
         toast('Add Success','success');
-        return back();
+        return back()->with('success', 'Your Message has been place');
     }
 
     /**

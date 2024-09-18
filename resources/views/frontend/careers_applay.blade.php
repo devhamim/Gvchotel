@@ -15,7 +15,7 @@
     }
 
 </style>
-<section class="inner-banner">
+<section class="inner-banner" style="background-repeat: no-repeat !important; background-position: center !important; background-size: cover !important;  background: url('{{ asset('frontend/img/Sub-Banner-8.jpg') }}');">
     <div class="thm-container">
         <h2>Career</h2>
         <div class="breadcumb">
@@ -169,7 +169,7 @@
                                     </div>
                                 </div>
                                 <input type="hidden" name="career_id" value="{{$careerlists->id}}">
-                                <div class="my-3">
+                                <div class="my-3" style="padding: 20px 0">
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>

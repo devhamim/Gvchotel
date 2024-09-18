@@ -76,13 +76,16 @@ Route::post('/gest/room/book', [FrontendController::class, 'gest_room_book'])->n
 Route::post('/search/rooms', [FrontendController::class, 'searchrooms'])->name('search.rooms');
 Route::get('/restaurant', [FrontendController::class, 'restaurant'])->name('restaurant');
 
-Route::post('/blog/comment', [BlogController::class, 'blog_comment'])->name('blog.comment');
+Route::post('/blog/comment', [FrontendController::class, 'blog_comment'])->name('blog.comment');
 Route::get('/dealerform/visiting/{id}', [DealerFormController::class, 'dealerform_visiting'])->name('dealerform.visiting');
+Route::post('/restaurant/table/book', [FrontendController::class, 'restaurant_table_book'])->name('restaurant.table.book');
 
 Auth::routes();
 
 // backend
 Route::get('/home', [HomeController::class, 'index'])->name('index');
+Route::get('/restaurant/book/list', [HomeController::class, 'restaurant_book_list'])->name('restaurant.book.list');
+Route::get('/restaurant/book/destroy/{id}', [HomeController::class, 'restaurant_book_destroy'])->name('restaurant.book.destroy');
         Route::resources([
             'users'      => UserController::class,
             'banner'      => BannerController::class,
