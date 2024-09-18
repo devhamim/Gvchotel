@@ -1,15 +1,19 @@
 <section class="footer-signup">
 	<div class="thm-container clearfix">
-		<div class="left-title pull-left">
-			<i class="mendoz-suit-icon-email"></i>
-			<h3>Subscribe our <span>newsletter</span></h3>
-		</div><!-- /.left-title -->
-		<div class="subscribe-form-wrap pull-right">
-			<form action="https://designarc.biz/demos/mendoz/mendoz-suit-preview/inc/mailchimp/subscribe.php" class="mailchimp-form">
-				<input type="text" placeholder="Enter your email address" name="email" />
-				<button type="submit">Subscribe now</button>
-			</form>
-		</div><!-- /.subscribe-form-wrap -->
+        <div class="row">
+            <div class="col-lg-3">
+                <img src="{{ asset('frontend/img/f1.png') }}" alt="">
+            </div>
+            <div class="col-lg-3">
+                <img src="{{ asset('frontend/img/f2.png') }}" alt="">
+            </div>
+            <div class="col-lg-3">
+                <img src="{{ asset('frontend/img/f3.png') }}" alt="">
+            </div>
+            <div class="col-lg-3">
+                <img src="{{ asset('frontend/img/f4.png') }}" alt="">
+            </div>
+        </div>
 	</div><!-- /.thm-container -->
 </section><!-- /.footer-signup -->
 
